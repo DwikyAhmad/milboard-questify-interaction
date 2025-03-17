@@ -33,8 +33,8 @@ const Index = () => {
               <span className="text-primary">MIL</span>Board
             </h1>
             <p className="text-muted-foreground px-6 leading-relaxed">
-              An innovative Media and Information Literacy tool 
-              for educating children in the digital world
+              Sebuah alat Literasi Media dan Informasi yang inovatif
+              untuk mendidik anak-anak di dunia digital
             </p>
           </div>
           
@@ -48,7 +48,7 @@ const Index = () => {
                     <path d="M12 2v4"></path>
                   </svg>
                 </div>
-                <p className="text-sm font-medium">Learning Modules</p>
+                <p className="text-sm font-medium">Modul Pembelajaran</p>
               </div>
               
               <div className="glass-morph flex flex-col items-center p-5 rounded-2xl">
@@ -63,7 +63,7 @@ const Index = () => {
                     <path d="M8 17h.01"></path>
                   </svg>
                 </div>
-                <p className="text-sm font-medium">Interactive Quizzes</p>
+                <p className="text-sm font-medium">Kuis Interaktif</p>
               </div>
               
               <div className="glass-morph flex flex-col items-center p-5 rounded-2xl">
@@ -73,7 +73,7 @@ const Index = () => {
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg>
                 </div>
-                <p className="text-sm font-medium">QR Scanning</p>
+                <p className="text-sm font-medium">Pemindai QR</p>
               </div>
               
               <div className="glass-morph flex flex-col items-center p-5 rounded-2xl">
@@ -86,7 +86,7 @@ const Index = () => {
                     <path d="M18 15v6"></path>
                   </svg>
                 </div>
-                <p className="text-sm font-medium">Progress Tracking</p>
+                <p className="text-sm font-medium">Pelacakan Kemajuan</p>
               </div>
             </div>
             
@@ -95,11 +95,11 @@ const Index = () => {
                 className="w-full py-6 text-base button-hover group"
                 onClick={() => navigate("/auth")}
               >
-                Get Started
+                Mulai Sekarang
                 <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
               <p className="text-xs text-muted-foreground">
-                Media and Information Literacy by UNESCO
+                Literasi Media dan Informasi oleh UNESCO
               </p>
             </div>
           </div>

@@ -11,19 +11,19 @@ import { useNavigate } from "react-router-dom";
 const mockModules = [
   {
     id: "module-1",
-    title: "Introduction to Media Literacy",
-    description: "Learn the fundamentals of media literacy and why it's important in today's digital world.",
-    duration: "20 min",
-    topics: ["Media Basics", "Critical Thinking", "Information Sources"],
+    title: "Pengantar Literasi Media",
+    description: "Pelajari dasar-dasar literasi media dan mengapa hal itu penting di dunia digital saat ini.",
+    duration: "20 menit",
+    topics: ["Dasar Media", "Berpikir Kritis", "Sumber Informasi"],
     progress: 75,
     isNew: false
   },
   {
     id: "module-2",
-    title: "Digital Citizenship",
-    description: "Understand how to be a responsible digital citizen and navigate online spaces safely.",
-    duration: "25 min",
-    topics: ["Online Safety", "Digital Identity", "Cyberbullying Prevention"],
+    title: "Kewarganegaraan Digital",
+    description: "Pahami cara menjadi warga digital yang bertanggung jawab dan menavigasi ruang online dengan aman.",
+    duration: "25 menit",
+    topics: ["Keamanan Online", "Identitas Digital", "Pencegahan Perundungan Maya"],
     progress: 30,
     isNew: true
   }
@@ -49,20 +49,20 @@ const Dashboard = () => {
 
   // Get user from localStorage
   const user = JSON.parse(localStorage.getItem("milboard-user") || "{}");
-  const userName = user?.name || "User";
+  const userName = user?.name || "Pengguna";
 
   return (
     <Layout>
       <div className={`space-y-8 transition-all duration-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
         <div>
-          <h1 className="text-2xl font-bold">Welcome back, {userName.split(" ")[0]}</h1>
-          <p className="text-muted-foreground mt-1">Continue your media literacy journey</p>
+          <h1 className="text-2xl font-bold">Selamat datang kembali, {userName.split(" ")[0]}</h1>
+          <p className="text-muted-foreground mt-1">Lanjutkan perjalanan literasi media Anda</p>
         </div>
         
         <Card className="overflow-hidden border-none shadow-md">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="font-semibold text-lg">Your Progress</h2>
+              <h2 className="font-semibold text-lg">Kemajuan Anda</h2>
               <span className="text-sm font-medium">{Math.round(overallProgress)}%</span>
             </div>
             <Progress value={overallProgress} className="h-2" />
@@ -74,7 +74,7 @@ const Dashboard = () => {
                 onClick={() => navigate("/modules")}
               >
                 <BookOpen className="h-5 w-5 mb-2 text-primary" />
-                <span className="text-xs">Learning</span>
+                <span className="text-xs">Pembelajaran</span>
               </Button>
               
               <Button 
@@ -83,7 +83,7 @@ const Dashboard = () => {
                 onClick={() => navigate("/quizzes")}
               >
                 <Award className="h-5 w-5 mb-2 text-primary" />
-                <span className="text-xs">Quizzes</span>
+                <span className="text-xs">Kuis</span>
               </Button>
               
               <Button 
@@ -92,7 +92,7 @@ const Dashboard = () => {
                 onClick={() => navigate("/scan")}
               >
                 <QrCode className="h-5 w-5 mb-2 text-primary" />
-                <span className="text-xs">Scan QR</span>
+                <span className="text-xs">Pindai QR</span>
               </Button>
             </div>
           </CardContent>
@@ -100,14 +100,14 @@ const Dashboard = () => {
         
         <div>
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-lg">Continue Learning</h2>
+            <h2 className="font-semibold text-lg">Lanjutkan Pembelajaran</h2>
             <Button 
               variant="ghost" 
               size="sm"
               className="text-primary group"
               onClick={() => navigate("/modules")}
             >
-              View All
+              Lihat Semua
               <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>

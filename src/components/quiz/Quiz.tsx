@@ -59,8 +59,8 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
       }
       
       toast({
-        title: "Quiz Completed!",
-        description: `You scored ${correctAnswers + (isCorrect ? 1 : 0)} out of ${questions.length}`,
+        title: "Kuis Selesai!",
+        description: `Skor Anda ${correctAnswers + (isCorrect ? 1 : 0)} dari ${questions.length}`,
       });
     } else {
       setCurrentQuestionIndex(prev => prev + 1);
@@ -82,15 +82,15 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
     const percentage = Math.round((score / questions.length) * 100);
     let message = "";
     
-    if (percentage >= 90) message = "Excellent! You're a media literacy expert!";
-    else if (percentage >= 70) message = "Great job! You have good knowledge of media literacy.";
-    else if (percentage >= 50) message = "Good effort! Keep learning to improve your skills.";
-    else message = "Keep practicing! Media literacy takes time to master.";
+    if (percentage >= 90) message = "Luar biasa! Anda ahli literasi media!";
+    else if (percentage >= 70) message = "Kerja bagus! Anda memiliki pengetahuan yang baik tentang literasi media.";
+    else if (percentage >= 50) message = "Usaha yang baik! Teruslah belajar untuk meningkatkan keterampilan Anda.";
+    else message = "Teruslah berlatih! Literasi media butuh waktu untuk dikuasai.";
     
     return (
       <Card className="border-none shadow-lg overflow-hidden">
         <CardHeader className="text-center pb-6">
-          <CardTitle className="text-2xl">Quiz Completed!</CardTitle>
+          <CardTitle className="text-2xl">Kuis Selesai!</CardTitle>
           <CardDescription>{title}</CardDescription>
         </CardHeader>
         
@@ -101,7 +101,7 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
                 <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center">
                   <div className="text-center">
                     <p className="text-3xl font-bold text-primary">{percentage}%</p>
-                    <p className="text-sm text-muted-foreground">Score</p>
+                    <p className="text-sm text-muted-foreground">Skor</p>
                   </div>
                 </div>
               </div>
@@ -109,25 +109,25 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
             </div>
             
             <div className="text-center">
-              <h3 className="text-xl font-medium">Your Score: {score}/{questions.length}</h3>
+              <h3 className="text-xl font-medium">Skor Anda: {score}/{questions.length}</h3>
               <p className="text-muted-foreground mt-1">{message}</p>
             </div>
           </div>
           
           <div className="space-y-2">
-            <h4 className="font-medium">Quiz Summary</h4>
+            <h4 className="font-medium">Ringkasan Kuis</h4>
             <div className="space-y-1">
               <div className="flex justify-between text-sm">
                 <span className="flex items-center">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  Correct answers
+                  Jawaban benar
                 </span>
                 <span className="font-medium">{score}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="flex items-center">
                   <XCircle className="h-4 w-4 text-destructive mr-2" />
-                  Incorrect answers
+                  Jawaban salah
                 </span>
                 <span className="font-medium">{questions.length - score}</span>
               </div>
@@ -140,14 +140,14 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
             className="w-full button-hover"
             onClick={handleTryAgain}
           >
-            Try Again
+            Coba Lagi
           </Button>
           <Button 
             variant="outline" 
             className="w-full button-hover"
             onClick={() => window.location.href = "/modules"}
           >
-            Back to Modules
+            Kembali ke Modul
           </Button>
         </CardFooter>
       </Card>
@@ -221,7 +221,7 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
               isCorrect ? "bg-green-50 border border-green-200" : "bg-destructive/10 border border-destructive/20"
             )}>
               <p className="font-medium mb-1">
-                {isCorrect ? "Correct!" : "Incorrect!"}
+                {isCorrect ? "Benar!" : "Salah!"}
               </p>
               <p className="text-sm text-muted-foreground">
                 {currentQuestion.explanation}
@@ -238,14 +238,14 @@ const Quiz = ({ title, description, questions, onComplete }: QuizProps) => {
             onClick={handleSubmitAnswer}
             disabled={selectedAnswer === null}
           >
-            Submit Answer
+            Kirim Jawaban
           </Button>
         ) : (
           <Button 
             className="w-full button-hover group"
             onClick={handleNextQuestion}
           >
-            {isLastQuestion ? "Complete Quiz" : "Next Question"}
+            {isLastQuestion ? "Selesaikan Kuis" : "Pertanyaan Berikutnya"}
             <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
         )}
