@@ -22,7 +22,7 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-white to-accent/30">
-      <div className="container px-3 sm:px-6 max-w-md mx-auto">
+      <div className="container px-6 max-w-md mx-auto">
         <div className={`transform transition-all duration-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
           <div className="text-center mb-8">
             <div className="w-16 h-16 mx-auto bg-primary rounded-2xl flex items-center justify-center mb-4 rotate-12 shadow-lg">
