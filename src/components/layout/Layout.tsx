@@ -19,10 +19,10 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Home", icon: Home, path: "/dashboard" },
-  { label: "Learning", icon: BookOpen, path: "/modules" },
-  { label: "Quizzes", icon: Award, path: "/quizzes" },
-  { label: "Scan QR", icon: QrCode, path: "/scan" },
+  { label: "Beranda", icon: Home, path: "/dashboard" },
+  { label: "Pembelajaran", icon: BookOpen, path: "/modules" },
+  { label: "Kuis", icon: Award, path: "/quizzes" },
+  { label: "Pindai QR", icon: QrCode, path: "/scan" },
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -130,7 +130,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </header>
 
       {/* Main content */}
-      <main className="flex-1 container py-6">
+      <main className="flex-1 container py-3">
         {children}
       </main>
       

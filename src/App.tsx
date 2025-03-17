@@ -13,7 +13,7 @@ import Modules from "./pages/Modules";
 import Quizzes from "./pages/Quizzes";
 import Scan from "./pages/Scan";
 import NotFound from "./pages/NotFound";
-
+import ModuleDetail from "./pages/ModuleDetail";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +29,7 @@ const App = () => (
           <Route path="/modules" element={<Modules />} />
           <Route path="/quizzes" element={<Quizzes />} />
           <Route path="/scan" element={<Scan />} />
+          <Route path="/modules/:id" element={<ModuleDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
