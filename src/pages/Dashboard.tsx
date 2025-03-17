@@ -74,7 +74,7 @@ const Dashboard = () => {
                 onClick={() => navigate("/modules")}
               >
                 <BookOpen className="h-5 w-5 mb-2 text-primary" />
-                <span className="text-xs">Pembelajaran</span>
+                <span className="text-xs">Belajar</span>
               </Button>
               
               <Button 
