@@ -38,10 +38,10 @@ const AuthForm = () => {
       
       // Show success message
       toast({
-        title: type === "login" ? "Selamat datang kembali!" : "Akun telah dibuat",
+        title: type === "login" ? "Welcome back!" : "Account created",
         description: type === "login" 
-          ? "Anda telah berhasil masuk." 
-          : "Akun Anda telah berhasil dibuat.",
+          ? "You've successfully signed in." 
+          : "Your account has been created successfully.",
       });
       
       // Redirect to dashboard (mock)
@@ -62,16 +62,16 @@ const AuthForm = () => {
   return (
     <Tabs defaultValue="login" className="w-full max-w-md mx-auto">
       <TabsList className="grid w-full grid-cols-2 mb-8">
-        <TabsTrigger value="login" className="text-base">Masuk</TabsTrigger>
-        <TabsTrigger value="register" className="text-base">Daftar</TabsTrigger>
+        <TabsTrigger value="login" className="text-base">Sign In</TabsTrigger>
+        <TabsTrigger value="register" className="text-base">Sign Up</TabsTrigger>
       </TabsList>
       
       <TabsContent value="login" className="animate-fade-in">
         <Card className="border-none shadow-lg">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-2xl font-medium">Selamat datang kembali</CardTitle>
+            <CardTitle className="text-2xl font-medium">Welcome back</CardTitle>
             <CardDescription>
-              Masukkan kredensial Anda untuk mengakses akun
+              Enter your credentials to access your account
             </CardDescription>
           </CardHeader>
           <form onSubmit={(e) => handleSubmit(e, "login")}>
@@ -83,7 +83,7 @@ const AuthForm = () => {
                   <Input
                     id="email"
                     name="email"
-                    placeholder="nama@contoh.com"
+                    placeholder="name@example.com"
                     type="email"
                     autoCapitalize="none"
                     autoComplete="email"
@@ -95,9 +95,9 @@ const AuthForm = () => {
               </div>
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="password">Kata Sandi</Label>
+                  <Label htmlFor="password">Password</Label>
                   <Button variant="link" className="px-0 font-normal h-auto" type="button">
-                    Lupa kata sandi?
+                    Forgot password?
                   </Button>
                 </div>
                 <div className="relative">
@@ -119,10 +119,10 @@ const AuthForm = () => {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  "Sedang masuk..."
+                  "Signing in..."
                 ) : (
                   <>
-                    Masuk
+                    Sign In
                     <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </>
                 )}
@@ -135,21 +135,21 @@ const AuthForm = () => {
       <TabsContent value="register" className="animate-fade-in">
         <Card className="border-none shadow-lg">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-2xl font-medium">Buat akun baru</CardTitle>
+            <CardTitle className="text-2xl font-medium">Create an account</CardTitle>
             <CardDescription>
-              Masukkan informasi Anda untuk membuat akun
+              Enter your information to create your account
             </CardDescription>
           </CardHeader>
           <form onSubmit={(e) => handleSubmit(e, "register")}>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="name">Nama Lengkap</Label>
+                <Label htmlFor="name">Full Name</Label>
                 <div className="relative">
                   <User className="absolute left-3 top-2.5 h-5 w-5 text-muted-foreground" />
                   <Input
                     id="name"
                     name="name"
-                    placeholder="Budi Santoso"
+                    placeholder="John Doe"
                     className="pl-10 input-focus"
                     required
                   />
@@ -162,7 +162,7 @@ const AuthForm = () => {
                   <Input
                     id="email"
                     name="email"
-                    placeholder="nama@contoh.com"
+                    placeholder="name@example.com"
                     type="email"
                     autoCapitalize="none"
                     autoComplete="email"
@@ -173,7 +173,7 @@ const AuthForm = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="password">Kata Sandi</Label>
+                <Label htmlFor="password">Password</Label>
                 <div className="relative">
                   <Key className="absolute left-3 top-2.5 h-5 w-5 text-muted-foreground" />
                   <Input
@@ -193,10 +193,10 @@ const AuthForm = () => {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  "Membuat akun..."
+                  "Creating account..."
                 ) : (
                   <>
-                    Buat Akun
+                    Create Account
                     <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </>
                 )}

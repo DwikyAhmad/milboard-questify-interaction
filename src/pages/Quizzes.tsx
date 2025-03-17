@@ -11,89 +11,89 @@ import { Award, ChevronRight } from "lucide-react";
 const mockQuizzes = [
   {
     id: "quiz-1",
-    title: "Dasar Literasi Media",
-    description: "Uji pemahaman Anda tentang konsep dasar literasi media",
+    title: "Media Literacy Basics",
+    description: "Test your understanding of fundamental media literacy concepts",
     difficulty: "beginner",
     questions: [
       {
         id: "q1",
-        question: "Apa yang dimaksud dengan literasi media?",
+        question: "What is media literacy?",
         options: [
-          "Kemampuan membaca artikel koran",
-          "Kemampuan mengakses, menganalisis, mengevaluasi, dan membuat media dalam berbagai bentuk",
-          "Studi tentang platform media sosial",
-          "Keterampilan mengembangkan konten media"
+          "The ability to read newspaper articles",
+          "The ability to access, analyze, evaluate, and create media in various forms",
+          "The study of social media platforms",
+          "The skill of developing media content"
         ],
         correctAnswer: 1,
-        explanation: "Literasi media adalah kemampuan untuk mengakses, menganalisis, mengevaluasi, dan membuat media dalam berbagai bentuk, membantu individu menavigasi lanskap media yang kompleks secara kritis."
+        explanation: "Media literacy is the ability to access, analyze, evaluate, and create media in various forms, helping individuals navigate the complex media landscape critically."
       },
       {
         id: "q2",
-        question: "Mengapa berpikir kritis penting dalam literasi media?",
+        question: "Why is critical thinking important in media literacy?",
         options: [
-          "Membantu Anda mengingat konten media dengan lebih baik",
-          "Tidak penting; mengonsumsi media harusnya pasif",
-          "Membantu Anda mempertanyakan dan mengevaluasi pesan media",
-          "Membantu perusahaan media membuat konten yang lebih baik"
+          "It helps you memorize media content better",
+          "It's not important; consuming media should be passive",
+          "It helps you question and evaluate media messages",
+          "It helps media companies create better content"
         ],
         correctAnswer: 2,
-        explanation: "Berpikir kritis memungkinkan konsumen untuk mempertanyakan maksud, konten, dan dampak pesan media daripada secara pasif menerima informasi."
+        explanation: "Critical thinking allows consumers to question the intent, content, and impact of media messages rather than passively accepting information."
       },
       {
         id: "q3",
-        question: "Manakah dari berikut ini yang BUKAN cara yang dapat diandalkan untuk memverifikasi informasi?",
+        question: "Which of the following is NOT a reliable way to verify information?",
         options: [
-          "Memeriksa silang dengan beberapa sumber",
-          "Memverifikasi kredensial penulis",
-          "Menganggap informasi itu benar jika dibagikan oleh banyak orang",
-          "Memeriksa tanggal publikasi"
+          "Cross-checking with multiple sources",
+          "Verifying the author's credentials",
+          "Assuming information is true if it's shared by many people",
+          "Checking the publication date"
         ],
         correctAnswer: 2,
-        explanation: "Informasi yang banyak dibagikan tidak menjamin keakuratannya. Ini dikenal sebagai 'kekeliruan bandwagon' - kepercayaan bahwa sesuatu itu benar karena banyak orang mempercayainya."
+        explanation: "Information being widely shared doesn't guarantee its accuracy. This is known as the 'bandwagon fallacy' - the belief that something is true because many people believe it."
       }
     ]
   },
   {
     id: "quiz-2",
-    title: "Kewarganegaraan Digital",
-    description: "Uji pengetahuan Anda tentang perilaku online yang bertanggung jawab",
+    title: "Digital Citizenship",
+    description: "Test your knowledge of responsible online behavior",
     difficulty: "intermediate",
     questions: [
       {
         id: "q1",
-        question: "Apa arti kewarganegaraan digital?",
+        question: "What does digital citizenship mean?",
         options: [
-          "Memiliki sertifikat kewarganegaraan untuk layanan digital",
-          "Penggunaan teknologi yang bertanggung jawab dan perilaku online yang tepat",
-          "Membuat konten digital untuk tujuan pemerintahan",
-          "Dilahirkan di era digital"
+          "Having a citizenship certificate for digital services",
+          "The responsible use of technology and appropriate online behavior",
+          "Creating digital content for governmental purposes",
+          "Being born in a digital era"
         ],
         correctAnswer: 1,
-        explanation: "Kewarganegaraan digital mengacu pada penggunaan teknologi yang bertanggung jawab dan tepat, termasuk perilaku yang hormat secara online dan pemahaman tentang hak dan tanggung jawab digital seseorang."
+        explanation: "Digital citizenship refers to the responsible and appropriate use of technology, including respectful behavior online and understanding one's digital rights and responsibilities."
       },
       {
         id: "q2",
-        question: "Apa itu perundungan maya (cyberbullying)?",
+        question: "What is cyberbullying?",
         options: [
-          "Mengajarkan keterampilan komputer kepada anak-anak",
-          "Menggunakan komunikasi elektronik untuk merundung seseorang",
-          "Membangun sistem cyber yang aman",
-          "Membuat video edukasi secara online"
+          "Teaching computer skills to children",
+          "Using electronic communication to bully someone",
+          "Building secure cyber systems",
+          "Creating educational videos online"
         ],
         correctAnswer: 1,
-        explanation: "Perundungan maya adalah penggunaan komunikasi elektronik (seperti media sosial, pesan, dll.) untuk mengintimidasi, mengancam, atau merugikan orang lain. Ini adalah masalah serius yang dapat berdampak emosional signifikan."
+        explanation: "Cyberbullying is the use of electronic communication (like social media, messaging, etc.) to intimidate, threaten, or harm others. It's a serious issue that can have significant emotional impacts."
       },
       {
         id: "q3",
-        question: "Apa yang harus Anda lakukan jika Anda menyaksikan perundungan maya?",
+        question: "What should you do if you witness cyberbullying?",
         options: [
-          "Abaikan saja, itu bukan masalah Anda",
-          "Bergabung untuk menyesuaikan diri dengan orang lain",
-          "Laporkan dan tawarkan dukungan kepada orang yang dirundung",
-          "Bagikan konten perundungan dengan lebih banyak orang"
+          "Ignore it, it's not your problem",
+          "Join in to fit in with others",
+          "Report it and offer support to the person being bullied",
+          "Share the bullying content with more people"
         ],
         correctAnswer: 2,
-        explanation: "Jika Anda menyaksikan perundungan maya, tindakan yang bertanggung jawab adalah melaporkannya ke platform dan menawarkan dukungan kepada orang yang dirundung. Menjadi pengamat yang tidak mengambil tindakan dapat secara tidak langsung mendorong perilaku perundungan."
+        explanation: "If you witness cyberbullying, the responsible action is to report it to the platform and offer support to the person being bullied. Being a bystander who takes no action can indirectly encourage bullying behavior."
       }
     ]
   }
@@ -128,9 +128,9 @@ const Quizzes = () => {
     <Layout>
       <div className={`space-y-6 transition-all duration-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
         <div>
-          <h1 className="text-2xl font-bold">Kuis Interaktif</h1>
+          <h1 className="text-2xl font-bold">Interactive Quizzes</h1>
           <p className="text-muted-foreground mt-1">
-            Uji pengetahuan literasi media Anda dengan kuis ini
+            Test your media literacy knowledge with these quizzes
           </p>
         </div>
         
@@ -148,15 +148,15 @@ const Quizzes = () => {
               className="mt-4"
               onClick={() => setActiveQuiz(null)}
             >
-              Kembali ke Kuis
+              Back to Quizzes
             </Button>
           </div>
         ) : (
           <Tabs defaultValue="all">
             <TabsList className="grid grid-cols-3 mb-4">
-              <TabsTrigger value="all">Semua</TabsTrigger>
-              <TabsTrigger value="beginner">Pemula</TabsTrigger>
-              <TabsTrigger value="intermediate">Menengah</TabsTrigger>
+              <TabsTrigger value="all">All</TabsTrigger>
+              <TabsTrigger value="beginner">Beginner</TabsTrigger>
+              <TabsTrigger value="intermediate">Intermediate</TabsTrigger>
             </TabsList>
             
             <TabsContent value="all" className="mt-0">
@@ -174,7 +174,7 @@ const Quizzes = () => {
                               : "bg-blue-100 text-blue-700 border-blue-200"
                           }`}
                         >
-                          {quiz.difficulty === "beginner" ? "Pemula" : "Menengah"}
+                          {quiz.difficulty}
                         </Badge>
                       </div>
                     </CardHeader>
@@ -185,7 +185,7 @@ const Quizzes = () => {
                       </p>
                       <div className="flex items-center mt-3 text-sm">
                         <Award className="h-4 w-4 text-primary mr-2" />
-                        <span>{quiz.questions.length} pertanyaan</span>
+                        <span>{quiz.questions.length} questions</span>
                       </div>
                     </CardContent>
                     
@@ -194,7 +194,7 @@ const Quizzes = () => {
                         className="w-full button-hover group"
                         onClick={() => handleStartQuiz(quiz.id)}
                       >
-                        Mulai Kuis
+                        Start Quiz
                         <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Button>
                     </CardFooter>
@@ -216,7 +216,7 @@ const Quizzes = () => {
                             variant="outline"
                             className="capitalize bg-green-100 text-green-700 border-green-200"
                           >
-                            Pemula
+                            {quiz.difficulty}
                           </Badge>
                         </div>
                       </CardHeader>
@@ -227,7 +227,7 @@ const Quizzes = () => {
                         </p>
                         <div className="flex items-center mt-3 text-sm">
                           <Award className="h-4 w-4 text-primary mr-2" />
-                          <span>{quiz.questions.length} pertanyaan</span>
+                          <span>{quiz.questions.length} questions</span>
                         </div>
                       </CardContent>
                       
@@ -236,7 +236,7 @@ const Quizzes = () => {
                           className="w-full button-hover group"
                           onClick={() => handleStartQuiz(quiz.id)}
                         >
-                          Mulai Kuis
+                          Start Quiz
                           <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
                       </CardFooter>
@@ -258,7 +258,7 @@ const Quizzes = () => {
                             variant="outline"
                             className="capitalize bg-blue-100 text-blue-700 border-blue-200"
                           >
-                            Menengah
+                            {quiz.difficulty}
                           </Badge>
                         </div>
                       </CardHeader>
@@ -269,7 +269,7 @@ const Quizzes = () => {
                         </p>
                         <div className="flex items-center mt-3 text-sm">
                           <Award className="h-4 w-4 text-primary mr-2" />
-                          <span>{quiz.questions.length} pertanyaan</span>
+                          <span>{quiz.questions.length} questions</span>
                         </div>
                       </CardContent>
                       
@@ -278,7 +278,7 @@ const Quizzes = () => {
                           className="w-full button-hover group"
                           onClick={() => handleStartQuiz(quiz.id)}
                         >
-                          Mulai Kuis
+                          Start Quiz
                           <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
                       </CardFooter>
