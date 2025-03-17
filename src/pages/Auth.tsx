@@ -32,7 +32,7 @@ const Auth = () => {
               <span className="text-primary">MIL</span>Board
             </h1>
             <p className="text-muted-foreground text-sm">
-              Sign in to access your learning journey
+              Masuk untuk mengakses perjalanan belajar Anda
             </p>
           </div>
           

@@ -29,8 +29,8 @@ const QRScanner = () => {
       }
       
       toast({
-        title: "QR Code detected!",
-        description: `Opening learning module: "Introduction to Media Literacy"`,
+        title: "Kode QR terdeteksi!",
+        description: `Membuka modul pembelajaran: "Pengantar Literasi Media"`,
       });
       
       // In a real app, this would navigate to the specific module
@@ -61,8 +61,8 @@ const QRScanner = () => {
       setHasPermissions(false);
       setIsScanning(false);
       toast({
-        title: "Camera access denied",
-        description: "Please allow camera access to scan QR codes.",
+        title: "Akses kamera ditolak",
+        description: "Harap izinkan akses kamera untuk memindai kode QR.",
         variant: "destructive",
       });
     }
@@ -122,9 +122,9 @@ const QRScanner = () => {
               </div>
               
               <div className="p-6 text-center">
-                <p className="font-medium">Scanning QR Code...</p>
+                <p className="font-medium">Memindai Kode QR...</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Position the QR code within the frame
+                  Posisikan kode QR dalam bingkai
                 </p>
               </div>
             </div>
@@ -132,9 +132,9 @@ const QRScanner = () => {
             <div className="p-6 text-center">
               {hasPermissions === false ? (
                 <div className="space-y-4">
-                  <p className="text-destructive font-medium">Camera access denied</p>
+                  <p className="text-destructive font-medium">Akses kamera ditolak</p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Please allow camera access in your browser settings and try again.
+                    Harap izinkan akses kamera di pengaturan browser Anda dan coba lagi.
                   </p>
                 </div>
               ) : (
@@ -144,9 +144,9 @@ const QRScanner = () => {
                       <Camera className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium">Scan QR Code</h3>
+                      <h3 className="text-xl font-medium">Pindai Kode QR</h3>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Scan a MILBoard QR code to access learning materials
+                        Pindai kode QR MILBoard untuk mengakses materi pembelajaran
                       </p>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ const QRScanner = () => {
                     onClick={startScanner} 
                     className="w-full button-hover"
                   >
-                    Start Camera
+                    Mulai Kamera
                   </Button>
                 </div>
               )}

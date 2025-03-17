@@ -30,7 +30,7 @@ const ModuleCard = ({
     <Card className={cn("overflow-hidden border-none shadow-md card-hover", className)}>
       <CardHeader className="pb-2 relative">
         {isNew && (
-          <Badge className="absolute top-4 right-4 bg-unesco-blue text-white">New</Badge>
+          <Badge className="absolute top-4 right-4 bg-unesco-blue text-white">Baru</Badge>
         )}
         
         <div className="flex items-center space-x-3">
@@ -40,7 +40,7 @@ const ModuleCard = ({
           <div>
             <CardTitle className="text-lg">{title}</CardTitle>
             <CardDescription className="text-xs mt-1">
-              {duration} • {topics.length} topics
+              {duration} • {topics.length} topik
             </CardDescription>
           </div>
         </div>
@@ -59,7 +59,7 @@ const ModuleCard = ({
           ))}
           {topics.length > 3 && (
             <Badge variant="outline" className="font-normal">
-              +{topics.length - 3} more
+              +{topics.length - 3} lainnya
             </Badge>
           )}
         </div>
@@ -67,7 +67,7 @@ const ModuleCard = ({
         {progress > 0 && (
           <div className="mt-4 space-y-1">
             <div className="flex justify-between text-xs">
-              <span className="text-muted-foreground">Progress</span>
+              <span className="text-muted-foreground">Kemajuan</span>
               <span className="font-medium">{progress}%</span>
             </div>
             <div className="w-full h-1.5 bg-accent rounded-full overflow-hidden">
@@ -85,7 +85,7 @@ const ModuleCard = ({
           className="w-full button-hover group"
           onClick={() => window.location.href = `/modules/${id}`}
         >
-          Continue Learning
+          Lanjutkan Pembelajaran
           <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
         </Button>
       </CardFooter>

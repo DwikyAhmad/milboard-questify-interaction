@@ -17,21 +17,21 @@ const Scan = () => {
     <Layout>
       <div className={`space-y-6 transition-all duration-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
         <div className="text-center">
-          <h1 className="text-2xl font-bold">Scan QR Code</h1>
+          <h1 className="text-2xl font-bold">Pindai Kode QR</h1>
           <p className="text-muted-foreground mt-1">
-            Scan a MILBoard QR code to access learning materials
+            Pindai kode QR MILBoard untuk mengakses materi pembelajaran
           </p>
         </div>
         
         <QRScanner />
         
         <div className="bg-primary/5 rounded-lg p-4 mt-8 text-sm">
-          <h3 className="font-medium mb-2">How to use the QR scanner</h3>
+          <h3 className="font-medium mb-2">Cara menggunakan pemindai QR</h3>
           <ol className="space-y-2 pl-4 list-decimal">
-            <li>Click "Start Camera" to activate your device's camera</li>
-            <li>Point the camera at a MILBoard QR code</li>
-            <li>Hold steady until the code is recognized</li>
-            <li>You'll be automatically directed to the relevant content</li>
+            <li>Klik "Mulai Kamera" untuk mengaktifkan kamera perangkat Anda</li>
+            <li>Arahkan kamera ke kode QR MILBoard</li>
+            <li>Tahan dengan stabil hingga kode dikenali</li>
+            <li>Anda akan otomatis diarahkan ke konten yang relevan</li>
           </ol>
         </div>
       </div>
