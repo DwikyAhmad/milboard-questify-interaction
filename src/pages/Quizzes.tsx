@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import Quiz from "@/components/quiz/Quiz";
+import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
