@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -61,21 +60,21 @@ const AuthForm = () => {
 
   return (
     <Tabs defaultValue="login" className="w-full max-w-md mx-auto">
-      <TabsList className="grid w-full grid-cols-2 mb-8">
+      <TabsList className="grid w-full grid-cols-2 mb-6">
         <TabsTrigger value="login" className="text-base">Masuk</TabsTrigger>
         <TabsTrigger value="register" className="text-base">Daftar</TabsTrigger>
       </TabsList>
       
       <TabsContent value="login" className="animate-fade-in">
         <Card className="border-none shadow-lg">
-          <CardHeader className="space-y-1">
+          <CardHeader className="space-y-1 p-5">
             <CardTitle className="text-2xl font-medium">Selamat datang kembali</CardTitle>
             <CardDescription>
               Masukkan kredensial Anda untuk mengakses akun
             </CardDescription>
           </CardHeader>
           <form onSubmit={(e) => handleSubmit(e, "login")}>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 px-5">
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
                 <div className="relative">
@@ -112,7 +111,7 @@ const AuthForm = () => {
                 </div>
               </div>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="px-5 pb-5">
               <Button 
                 type="submit" 
                 className="w-full button-hover group"
@@ -134,14 +133,14 @@ const AuthForm = () => {
       
       <TabsContent value="register" className="animate-fade-in">
         <Card className="border-none shadow-lg">
-          <CardHeader className="space-y-1">
+          <CardHeader className="space-y-1 p-5">
             <CardTitle className="text-2xl font-medium">Buat akun baru</CardTitle>
             <CardDescription>
               Masukkan informasi Anda untuk membuat akun
             </CardDescription>
           </CardHeader>
           <form onSubmit={(e) => handleSubmit(e, "register")}>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 px-5">
               <div className="space-y-2">
                 <Label htmlFor="name">Nama Lengkap</Label>
                 <div className="relative">
@@ -186,7 +185,7 @@ const AuthForm = () => {
                 </div>
               </div>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="px-5 pb-5">
               <Button 
                 type="submit" 
                 className="w-full button-hover group"

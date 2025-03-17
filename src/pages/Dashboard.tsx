@@ -53,7 +53,7 @@ const Dashboard = () => {
 
   return (
     <Layout>
-      <div className={`space-y-8 transition-all duration-700 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+      <div className={`space-y-8 transition-all duration-700 px-3 sm:px-0 ${animate ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
         <div>
           <h1 className="text-2xl font-bold">Selamat datang kembali, {userName.split(" ")[0]}</h1>
           <p className="text-muted-foreground mt-1">Lanjutkan perjalanan literasi media Anda</p>
